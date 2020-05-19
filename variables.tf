@@ -10,6 +10,12 @@ variable "iam_role_name" {
   description = "The desired name for the iam role"
 }
 
+variable "iam_assume_role_policy" {
+  default = null
+  type = any
+  description = "The assume role policy data "
+}
+
 variable "iam_role_path" {
   type        = string
   default     = null
