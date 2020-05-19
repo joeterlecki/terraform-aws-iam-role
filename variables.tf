@@ -11,8 +11,8 @@ variable "iam_role_name" {
 }
 
 variable "iam_assume_role_policy" {
-  default = null
-  type = any
+  default     = null
+  type        = any
   description = "The assume role policy. Use preffered appraoch for defining iam policies. Files and or policy data resrouce."
 }
 
