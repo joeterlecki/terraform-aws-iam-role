@@ -13,13 +13,13 @@ variable "iam_role_name" {
 variable "iam_assume_role_policy" {
   default = null
   type = any
-  description = "The assume role policy data "
+  description = "The assume role policy. Use preffered appraoch for defining iam policies. Files and or policy data resrouce."
 }
 
 variable "iam_role_path" {
   type        = string
   default     = null
-  description = "The desired path of the iam role"
+  description = "The desired identifying path of the iam role"
 }
 
 variable "iam_role_description" {
@@ -31,7 +31,7 @@ variable "iam_role_description" {
 
 variable "iam_role_max_session_duration" {
   type        = string
-  default     = "14400"
+  default     = "3600"
   description = "The max amount of time a sts token session is valid"
 }
 
